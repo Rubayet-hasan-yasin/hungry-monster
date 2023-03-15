@@ -25,6 +25,10 @@ h3,h5{
 h2  {
     text-align: center;
 }
+#mealItemsInfo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
 #mealCard{
     display: grid;
     grid-template-columns: repeat(4, 0.5fr);
