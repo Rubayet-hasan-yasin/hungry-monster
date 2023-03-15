@@ -60,6 +60,7 @@ const displayDetails = mealItemDetails => {
         const imgUrl = document.createElement('img');
         imgUrl.src = items.strMealThumb;
         mealItemsInformations.appendChild(imgUrl);
+        console.log(items)
         const li = `
         
          <li>${items.strIngredient1}</li>
@@ -74,7 +75,7 @@ const displayDetails = mealItemDetails => {
          <li>${items.strIngredient10}</li>
          <li>${items.strIngredient11}</li>
          <li>${items.strIngredient12}</li>
-         <li>${items.strIngredient13}</li>
+         <li>${items.strIngredient13 && items.strIngredient13}</li>
         `
         ul.innerHTML = li;
         mealItemsInformations.appendChild(itemsName);
